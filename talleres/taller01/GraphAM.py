@@ -3,7 +3,7 @@ from collections import deque
 
 class GraphAm:
     def __init__(self, size):
-      dimensiones = (size,size)#hola
+      dimensiones = (size,size)
       self.matriz = np.zeros( dimensiones )    
 
     def getWeight(self, source, destination):
