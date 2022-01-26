@@ -4,7 +4,7 @@ from collections import deque
 class GraphAm:
     def __init__(self, size):
       dimensiones = (size,size)
-      self.matriz = np.zeros( dimensiones )    
+      self.matriz = np.zeros(dimensiones)    
 
     def getWeight(self, source, destination):
       return self.matriz[source][destination]
@@ -15,8 +15,7 @@ class GraphAm:
     def getSuccessors(self, vertex):
       filaVertice = self.matriz[vertex]
       respuesta = []
-      for j in range(0
-      ,size):
+      for j in range(0, size):
         if filaVertice[j] != 0:
            respuesta.append(j)
       return respuesta
